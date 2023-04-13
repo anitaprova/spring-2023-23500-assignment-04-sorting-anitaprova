@@ -42,8 +42,13 @@ can create a new Makefile or copy and modify one you've used in the past.
 Initially, when I wrote my quick sort with the middle value as the pivot,
 it was somehow slower than the selection sort. I realized my mistake was in
 the partitioning, so after some more trial and error, I looked up how 
-to correctly do it. I knew the quick sort would be fast but I was actually 
-suprised at how much faster the merge sort was in my testing. The merge sort
-ended up being the second fastest. It was faster than the quick sort I had.
-But my quick sort was faster than quick sort from class. 
-Overall, the default quick sort was the fastest by far. 
+to correctly do it. I watched several videos and read articles explaining the 
+partitioning algorithm since I couldnt understand it. 
+
+I knew the quick sort would be fast but I was actually suprised at how much 
+faster the merge sort was in my testing. When I tested for 500,000 items.
+The merge sort ended up being the second fastest. It was faster than the quick sort
+I created, but my quick sort was faster than quick sort from class. Overall,
+the default quick sort was the fastest by far. When I tested with smaller sizes,
+however, my sort was faster with than the merge sort and the quick sort from class. 
+But once again the default sort was the fastest. 
