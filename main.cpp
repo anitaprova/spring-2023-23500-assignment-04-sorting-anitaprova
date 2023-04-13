@@ -10,9 +10,9 @@
 
 int main()
 {
-	int size = 500000;
+	int size = 15;
 	int max_val = 50;
-	char algorithm = 'd';
+	char algorithm = 't';
 	char c;
 
 	srand(time(nullptr));
@@ -22,7 +22,7 @@ int main()
 		a[i] = rand() % max_val;
 	}
 
-	//print_vector(a);
+	print_vector(a);
 
 	std::vector<int> b;
 
@@ -57,7 +57,7 @@ int main()
 	long current_time = tp.tv_sec * 1000 + tp.tv_usec / 1000;
 	long elapsed = current_time - start_time;
 
-	//print_vector(b);
+	print_vector(b);
 
 	std::cout << "\n----------------\nElapsed Time: ";
 	std::cout << elapsed << "\n";
