@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <cstdlib>
+#include <algorithm>
 #include <math.h>
 #include "sorts.h"
 
@@ -11,7 +12,7 @@ int main()
 {
 	int size = 500000;
 	int max_val = 50;
-	char algorithm = 'm';
+	char algorithm = 'd';
 	char c;
 
 	srand(time(nullptr));
@@ -45,6 +46,11 @@ int main()
 	else if (algorithm == 't') // quicksort2
 	{
 		b = qsort2(a, 0, a.size() - 1);
+	}
+	else if (algorithm == 'd') // default c++ sort
+	{
+		std::sort(a.begin(), a.end());
+		b = a;
 	}
 
 	gettimeofday(&tp, NULL);

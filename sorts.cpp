@@ -191,7 +191,7 @@ void swap(std::vector<int> &list, int i, int j) // index
 
 std::vector<int> qsort2(std::vector<int> &list, int low, int high)
 {
-	int pivot = (list[low] + list[high]) / 2; //middle value 
+	int pivot = (list[low] + list[high]) / 2; // middle value
 	int i = low;
 	int j = high;
 
@@ -215,8 +215,8 @@ std::vector<int> qsort2(std::vector<int> &list, int low, int high)
 		}
 	}
 
-	//std::cout << low << "  " << high << "  " << pivot << "           ";
-	//print_vector(list);
+	// std::cout << low << "  " << high << "  " << pivot << "           ";
+	// print_vector(list);
 
 	if (low < j)
 	{
